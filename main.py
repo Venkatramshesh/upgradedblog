@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import requests
 import smtplib
-from waitress import serve
+#from waitress import serve
 import os
 
 
