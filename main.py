@@ -2,11 +2,16 @@ from flask import Flask, render_template, request
 import requests
 import smtplib
 from waitress import serve
+import os
+
 
 app = Flask(__name__)
 
 my_email = "vramshesh@gmail.com"
-passwd = "bordoreadqoswsci"
+#os.environ["passwd"] = "bordoreadqoswsci"
+#passwd = "bordoreadqoswsci"
+passwd=os.getenv("passwd")
+print(passwd)
 
 # @app.route('/')
 # def logout():
