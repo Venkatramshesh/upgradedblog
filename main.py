@@ -8,10 +8,8 @@ import os
 app = Flask(__name__)
 
 my_email = "vramshesh@gmail.com"
-#os.environ["passwd"] = "bordoreadqoswsci"
-#passwd = "bordoreadqoswsci"
 passwd=os.getenv("passwd")
-print(passwd)
+
 
 # @app.route('/')
 # def logout():
