@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2682de84-de59-436d-8eba-3d270e2ae70d" name="Changes" comment="New Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="2682de84-de59-436d-8eba-3d270e2ae70d" name="Changes" comment="New Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,9 +64,9 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="api_key" value="jCOo4PAnmU6A0j2lpKeI-A" />
+        <env name="DATABASE_URL" value="postgres://jvlxhzakjeenox:7111a6d4feca3049c4f9a7848495e94cd06996" />
         <env name="passwd" value="bordoreadqoswsci" />
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DATABASE_URL" value="DATABASE_URL" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -199,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667484204338</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="New Commit">
+      <created>1667486066441</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667486066441</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
