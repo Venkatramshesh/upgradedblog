@@ -12,8 +12,15 @@
 {{ form.csrf_token }}
     </form>
 {{ ckeditor.load() }}
-{{ ckeditor.config(name='body') }}
+{{ ckeditor.config(name='body')}}
 
   {{ wtf.quick_form(form) }}
+<p> Old comments:</p>
+
+{% for comment in comments %}
+     <p> <b> {{comment.name}}</b></p>
+     <p> {{comment.text|safe}}</p>
+
+{% endfor %}
 </body>
 </html>

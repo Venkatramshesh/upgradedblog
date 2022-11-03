@@ -7,6 +7,6 @@ from flask_ckeditor import CKEditorField, CKEditor
 
 ##WTForm
 class CreatecommentForm(FlaskForm):
-    body = CKEditorField('Please leave any blog comments below. Thank you')
+    body = CKEditorField('Please leave any blog or general comments below. Thank you')
     name = StringField(label='FullName')
     submit = SubmitField(label='Submit Comment')

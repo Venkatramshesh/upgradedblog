@@ -17,7 +17,7 @@ ckeditor = CKEditor(app)
 app.config['SECRET_KEY'] = os.environ.get('api_key')
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL") #,  "sqlite:///C:/Users/venka/Python100days/Upgradedblog/comments.db")
+app.config['SQLALCHEMY_DATABASE_URI'] =  "sqlite:///C:/Users/venka/Python100days/Upgradedblog/comments.db"
 db = SQLAlchemy(app)
 
 my_email = "vramshesh@gmail.com"
@@ -57,10 +57,10 @@ def post(index):
 @app.route('/from_entry', methods=["POST"])
 def from_entry():
     if request.method == 'POST':
-        print(request.form["fname"])
-        print(request.form["email"])
-        print(request.form["phone"])
-        print(request.form["message"])
+        # print(request.form["fname"])
+        # print(request.form["email"])
+        # print(request.form["phone"])
+        # print(request.form["message"])
 
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
             connection.starttls()
@@ -80,7 +80,7 @@ def comment():
        response = requests.get(blogURL)
        allposts = response.json()
        return render_template('index.html', posts=allposts)
-    return render_template('comment.html', form=form)
+    return render_template('comment.html', form=form,comments=comments.query.all())
 
 if __name__=="__main__":
      app.run(debug=True)
