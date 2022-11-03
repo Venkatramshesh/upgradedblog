@@ -16,8 +16,13 @@ Bootstrap(app)
 ckeditor = CKEditor(app)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
+uri=os.environ.get("DATABASE_URL") 
+if uri and uri.startswith("postgres://"):
+    uri = uri.replace("postgres://", "postgresql://", 1)
+app.config['SQLALCHEMY_DATABASE_URI'] =  uri   
 
-app.config['SQLALCHEMY_DATABASE_URI'] =  os.environ.get("DATABASE_URL") #"sqlite:///C:/Users/venka/Python100days/Upgradedblog/comments.db"
+#app.config['SQLALCHEMY_DATABASE_URI'] =  os.environ.get("DATABASE_URL") #"sqlite:///C:/Users/venka/Python100days/Upgradedblog/comments.db"
+
 db = SQLAlchemy(app)
 
 my_email = "vramshesh@gmail.com"
