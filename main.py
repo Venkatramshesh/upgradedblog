@@ -4,7 +4,7 @@ import smtplib
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from flask_sqlalchemy import SQLAlchemy
-from waitress import serve
+#from waitress import serve
 import os
 from form import CreatecommentForm
 from flask_bootstrap import Bootstrap
@@ -17,7 +17,7 @@ ckeditor = CKEditor(app)
 app.config['SECRET_KEY'] = os.environ.get('api_key')
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",  "sqlite:///C:/USers/venka/Python100days/Upgradedblog/comments.db")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL") #,  "sqlite:///C:/Users/venka/Python100days/Upgradedblog/comments.db")
 db = SQLAlchemy(app)
 
 my_email = "vramshesh@gmail.com"
