@@ -21,7 +21,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] =  os.environ.get("DATABASE_URL") #"sqlite
 db = SQLAlchemy(app)
 
 my_email = "vramshesh@gmail.com"
-passwd=os.getenv("passwd")
+#passwd=os.getenv("passwd")
 
 class comments(db.Model):
     id = db.Column(db.Integer, primary_key=True)
