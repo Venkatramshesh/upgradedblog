@@ -1,0 +1,19 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments:</title>
+
+</head>
+<body>
+<form method="post">
+{{ form.csrf_token }}
+    </form>
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+
+  {{ wtf.quick_form(form) }}
+</body>
+</html>
