@@ -14,7 +14,7 @@ from flask_ckeditor import CKEditor
 app = Flask(__name__)
 Bootstrap(app)
 ckeditor = CKEditor(app)
-app.config['SECRET_KEY'] = os.environ.get('api_key')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] =  os.environ.get("DATABASE_URL") #"sqlite:///C:/Users/venka/Python100days/Upgradedblog/comments.db"
